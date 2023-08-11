@@ -1,1 +1,0 @@
-const { Cicle, Square, Triangle}
