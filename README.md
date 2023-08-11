@@ -53,3 +53,7 @@ Email: [Email](2014nmartinez@gmail.com)
 
 Nelson's youtube tutorial on the SVG Logo
 [Youtube](https://www.youtube.com/watch?v=MQTrALc3izA)
+
+![Example](./images/svgexample.jpg)
+
+![Repo](./images/github.jpg)
