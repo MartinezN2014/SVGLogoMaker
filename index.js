@@ -2,16 +2,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateLogo = require("./examples/utils/generateLogo");
-// Defines a Svg class that has a constructor with three methods for rendering and setting the text and shape elements in the SVG string.
-
-class Svg {
-  constructor() {
-    this.textElement = "";
-    this.shapeElement = "";
-  }
-  render() {}
-}
-
+// all my inquirer questions
 const questions = [
   {
     type: "input",
@@ -35,7 +26,7 @@ const questions = [
     choices: ["circle", "square", "triangle"],
   },
 ];
-
+//this prompts the questions and then generates a logo based on the users options
 inquirer.prompt(questions).then(function (data) {
   const svgLogo = generateLogo(data);
   fs.writeFile("logo.svg", svgLogo, function (err) {
